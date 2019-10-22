@@ -1,5 +1,5 @@
 server:
-  port: 8082 #the default port used for zuul service
+  port: 8084 #the default port used for zuul service
   
 zuul:
   ignoredServices: '*'
@@ -9,5 +9,5 @@ zuul:
     routes:
       clientes-service: # Service to create as sample
         path: /cliente/** #path that will be intercepted
-        url: clientes-service #which url the request will e mapped to
+        url: http://localhost:8080/ #which url the request will e mapped to
         stripPrefix: false  #if zuul should replace the "/sample/" segment
