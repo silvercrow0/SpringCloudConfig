@@ -1,9 +1,8 @@
-
 server:
   port: 8084
 zuul:
   ignoredServices: '*'
   routes:
-    echo-service:
+    clientes-service:
       path: /cliente/**
       url: http://localhost:8080
