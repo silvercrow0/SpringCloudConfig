@@ -2,10 +2,14 @@ server:
   port: 8088
   
 spring:
-  datasource:
-    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    password: Admin100
-    url: jdbc:sqlserver://localhost;databaseName=DocumentosWeb
-    username: sa
-  jpa:
-    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+  data:
+    mongodb:
+      authenticationDatabase: demo
+      host: 127.0.0.2
+      port: 27017
+      username: Usuario1
+      password: Pass1234
+      database: demo
+logging:
+  level:
+    root: DEBUG
