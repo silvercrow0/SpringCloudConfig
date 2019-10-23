@@ -1,10 +1,10 @@
 server:
   port: 8080
 spring:
-    datasource:
-        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-        password: Admin100
-        url: jdbc:sqlserver://localhost;databaseName=DocumentosWeb
-        username: sa
-    jpa:
-        database-platform: org.hibernate.dialect.SQLServer2012Dialect
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: Admin100
+    url: jdbc:sqlserver://localhost;databaseName=DocumentosWeb
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
